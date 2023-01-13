@@ -4,9 +4,12 @@ A collection of examples showing how to utilize Consent Mode with Google Tag Man
 
 ## What's in this repo
 
-### `./vendor-agnostic-google-template`
+### `./quantcast-choice-gtm-template`
 
-A reference implementation meant to demonstrate how Tag Manager triggers and variables can be used to manage Consent Mode consent states in lieu of a CMP-provided template.
+A reference implementation meant to demonstrate how Tag Manager triggers and variables can be used to manage Consent 
+Mode consent states in lieu of a CMP-provided template.
+
+To edit the .tpl file, import it into Google Tag Manager (Templates/New then .../import). When done, export it.
 
 For more information on Consent Mode, please see the following articles:
 

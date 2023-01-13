@@ -1,9 +1,15 @@
 # About This Template
-This template is a reference implementation meant to demonstrate how Tag Manager triggers and variables can be used to manage Consent Mode consent states in place of a CMP-provided template. It is provided as a proof of concept with no warranties or support. Google recommends utilizing the template provided by your CMP, if one is available.
+This template is based on a reference implementation meant to demonstrate how Tag Manager triggers and variables can 
+be used to 
+manage Consent Mode consent states in place of a CMP-provided template. It is provided as a proof of concept with no 
+warranties or support. Google recommends utilizing the template provided by your CMP, if one is available.
 # Before You Begin
-Review the Consent Mode documentation here, paying close attention to the section titled “Consent Mode behavior”. You will need this information to make your selections during tag setup.
+Review the Consent Mode documentation here, paying close attention to the section titled “Consent Mode behavior”. You
+will need this information to make your selections during tag setup.
 
-This template assumes that your CMP or consent banner provides a way to trigger tag firing in Tag Manager when users provide consent. Your CMP should provide instructions for setting up an appropriate trigger and variable to fire tags in Tag Manager. Please refer to your CMP’s documentation for instructions on how to set these up.
+This template assumes that your CMP or consent banner provides a way to trigger tag firing in Tag Manager when users 
+provide consent. Your CMP should provide instructions for setting up an appropriate trigger and variable to fire tags 
+in Tag Manager. Please refer to your CMP’s documentation for instructions on how to set these up.
 # Instructions For Use
 ## Importing the template
 1. Download all files from this repository
@@ -14,9 +20,18 @@ This template assumes that your CMP or consent banner provides a way to trigger 
 6. Locate the .tpl file from the ZIP file you downloaded
 7. Save the template
 ## Creating the tags
-1. Use this template to create two tags, one which is configured with the Default command, and one which is configured with the Update command.
-2. Configure the Default command tag to fire on the Consent Initialization trigger, and set the default settings according to your organization's requirements. Note: This template does not configure URL Passthrough behavior. Please see here for more information on URL Passthrough and instructions on how to configure it on your site if needed.
-3. Configure the Update command tag to fire on a trigger that executes when consent changes. Set the consent states for each consent type in the update settings using a variable or variables that return "granted" when the visitor has consented to the corresponding consent type and "denied" when the visitor has not consented. If you are using triggers and variables to fire Google tags today, the same triggers and variables can likely be reused for firing the Update command tag. Please consult your CMP’s documentation for information on creating an appropriate trigger and variable.
+1. Use this template to create two tags, one which is configured with the Default command, and one which is configured 
+   with the Update command.
+2. Configure the Default command tag to fire on the Consent Initialization trigger, and set the default settings 
+   according to your organization's requirements. Note: This template does not configure URL Passthrough behavior. 
+   Please see here for more information on URL Passthrough and instructions on how to configure it on your site if
+   needed.
+3. Configure the Update command tag to fire on a trigger that executes when consent changes. Set the consent states 
+   for each consent type in the update settings using a variable or variables that return "granted" when the visitor 
+   has consented to the corresponding consent type and "denied" when the visitor has not consented. If you are using 
+   triggers and variables to fire Google tags today, the same triggers and variables can likely be reused for firing 
+   the Update command tag. Please consult your CMP’s documentation for information on creating an appropriate trigger 
+   and variable.
 
 **IMPORTANT:** Failure to properly configure two copies of this tag as described will result in undesirable tag behavior. If you use a CMP which offers their own GTM template, please use the CMP-provided template.
 
